@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# KiCad
+*.lck
+~*.lck
+*-backups/
+fp-info-cache
+*.kicad_prl
+_autosave-*
+*.bak
+
+# Firmware build output
+build/
+**/build/
+
+# Python
+__pycache__/
+*.pyc

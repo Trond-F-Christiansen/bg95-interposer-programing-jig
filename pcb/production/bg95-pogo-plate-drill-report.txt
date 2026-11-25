@@ -1,0 +1,24 @@
+Drill report for bg95-pogo-plate.kicad_pcb
+Created on 2026-10-26T12:47:41
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'bg95-pogo-plate-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.900mm  0.0354"  (6 holes))
+    T2  1.000mm  0.0394"  (4 holes))
+
+    Total plated holes count 10
+
+
+Drill file 'bg95-pogo-plate-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.200mm  0.1260"  (4 holes))
+
+    Total unplated holes count 4

@@ -1,0 +1,6 @@
+Reference,Qty,Description,Manufacturer,Part number,Notes
+J1;J3;J4;J5;J6,6,"Spring probe (pogo pin), 1.27 mm pitch family",Multicomp,P50-B-120-G,"J1 is the staggered DBG_RX/DBG_TX pair; J3,J4 = VDD; J5,J6 = GND."
+J1;J3;J4;J5;J6,6,"Receptacle (socket) for P50 probes, solder cup",Multicomp,R50-SC,"Soldered into the lower plate."
+J2,1,"Pin header, 1x04, 2.54 mm, vertical",Generic,,"1 VDD, 2 GND, 3 DBG_TX (BG95 pad 23), 4 DBG_RX (BG95 pad 22)"
+,,"",,,""
+,,"",,,""

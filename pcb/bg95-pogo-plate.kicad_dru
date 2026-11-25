@@ -1,0 +1,23 @@
+(version 1)
+
+# PCBWay capability limits (https://www.pcbway.com/capabilities.html, 1-2 layer rigid, 1 oz, standard + advanced "normal" process)
+# Core limits are in the project Board Setup > Design Rules (error severity). The rules below add what Board Setup cannot express.
+
+(rule "PCBWay advanced: component-hole weld ring >= 0.25 mm (10 mil)"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+	(constraint annular_width (min 0.25mm))
+	(severity warning))
+
+(rule "PCBWay: pad-to-pad copper spacing >= 0.1 mm (4 mil standard), 0.15 mm (6 mil) advanced"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.NetName != B.NetName")
+	(constraint clearance (min 0.15mm))
+	(severity warning))
+
+(rule "PCBWay: hole-to-hole (component holes) >= 0.41 mm (16 mil)"
+	(constraint hole_to_hole (min 0.41mm))
+	(severity error))
+
+(rule "PCBWay: NPTH to copper >= 0.25 mm"
+	(condition "A.Pad_Type == 'NPTH, mechanical'")
+	(constraint hole_clearance (min 0.25mm))
+	(severity error))
